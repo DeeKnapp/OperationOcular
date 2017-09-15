@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.quickenloans.ocularproject.fragments.SolutionEngineFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estimated Monthly Payment"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/darkBrown"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/est_monthly_payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:textColor="@color/darkBrown"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/listing_price"
+            android:textColor="@color/darkBrown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Listing Price: "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/rate_apr"
+            android:textColor="@color/darkBrown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Rate/APR: "
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/loan_amount"
+            android:textColor="@color/darkBrown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Loan Amount: "
+            android:layout_margin="5dp"/>
+
+        <ListView
+            android:id="@+id/list_solutions"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:listSelector="@color/black10"
+            android:choiceMode="singleChoice"
+            android:drawSelectorOnTop="true">
+
+        </ListView>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/solutions_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

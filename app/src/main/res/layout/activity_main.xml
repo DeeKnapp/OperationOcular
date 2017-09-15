@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/landing_background"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.31">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ocular_logo"
+                android:alpha=".7"
+                android:textColor="@color/white95"
+                android:textSize="70sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="90sp"
+                android:text="ocular"
+                android:paddingBottom="20dp"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white95"
+                android:gravity="center" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/cameraButton"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".23"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center_horizontal"
+            android:drawableTop="@drawable/camera_icon"
+            android:onClick="useCamera"
+            android:text="camera"
+            android:textColor="@color/darkBrown"
+            android:background="@color/white65"
+            android:foreground="?android:selectableItemBackground"
+            android:clickable="true"/>
+
+        <Button
+            android:id="@+id/mapButton"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".23"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:drawableTop="@drawable/map_icon"
+            android:layout_gravity="center_horizontal"
+            android:onClick="useMap"
+            android:text="map"
+            android:textColor="@color/darkBrown"
+            android:alpha="1"
+            android:background="@color/white65"
+            android:foreground="?android:selectableItemBackground"
+            android:clickable="true"/>
+
+        <Button
+            android:id="@+id/historyButton"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".23"
+            android:layout_gravity="center_horizontal"
+            android:drawableTop="@drawable/history_icon"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:onClick="viewHistory"
+            android:text="saved searches"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/darkBrown"
+            android:textSize="15sp"
+            android:background="@color/white65"
+            android:foreground="?android:selectableItemBackground"
+            android:clickable="true"/>
+
+    </LinearLayout>
+</RelativeLayout>
